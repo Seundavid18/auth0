@@ -1,0 +1,43 @@
+.error-box{
+    max-width: 400px;
+    height: 130px;
+    background: rgba(219, 130, 130, 0.3);
+}
+
+.content{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.password-toggle-icon{
+    position: absolute;
+    top: 140px;
+    right: 23px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.password-toggle-icon2{
+    position: absolute;
+    top: 312px;
+    right: 23px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.space{
+    margin-bottom: 300px;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background: rgb(14, 14, 14);
+    padding: 70px 20px;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+  }
