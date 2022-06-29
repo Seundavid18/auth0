@@ -134,7 +134,7 @@ class SignUp extends Component {
                       </div>
   
                       <div className="form-group mb-3">
-                        <input className="btn btn-primary btn-block" type="submit" value='Sign up' />
+                        <input className="btn btn-primary" type="submit" value="Log in" />
                       </div>
                     </form>
                   </div>
