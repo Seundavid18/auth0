@@ -4,6 +4,17 @@
     background: rgba(219, 130, 130, 0.3);
 }
 
+.errBox{
+    width: 300px;
+    height: 40px;
+    background: rgb(240, 199, 199);
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content{
     margin-top: 100px;
     margin-bottom: 80px;

@@ -145,8 +145,7 @@ const protected = (req, res, next) => {
     res.status(200).json({
         success : true,
         message : 'This is protected resource for only signed in users',
-        greeting : `Welcome to Auh0 Web app ${name}, your email address is ${email}`
-        
+        greeting : `Hello ${name}, your email address is ${email}`
     })
     res.send()
 }

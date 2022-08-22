@@ -37,11 +37,12 @@ const Login = () => {
 
         axios.post('http://localhost:8000/api/login', signin)
             .then(response => {
+              localStorage.setItem('token', response.data.token)
               if (response.data.success === true ){
                 setLoggedin(true)
               } else {
                 setErrorMsg(response.data.message)
-              }
+              }       
             })
     }
 
@@ -53,7 +54,13 @@ const Login = () => {
           <div className="row mx-auto justify-content-center align-items-center flex-column">
             <div className="col-lg-6">
               <h1 className="fs-3 text-center">Login</h1>
-              <h4 className="text-center text-danger d-flex justify-content-center align-items-center fs-6">{errorMsg}</h4>
+              {errorMsg && 
+              <div className="d-flex mx-auto justify-content-center align-items-center">
+                <div className='errBox'>
+                  <h4 className="text-center text-danger d-flex justify-content-center align-items-center fs-6">{errorMsg}</h4>
+                </div>
+              </div>
+              }
               <div className="card mt-2 mb-5 form-div">
                 <div className="card-body">
                   <form onSubmit={SubmitForm}>

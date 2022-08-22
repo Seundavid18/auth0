@@ -6,6 +6,7 @@ import Home from './Home';
 import SignUp from './SignUp';
 import Login from './Login';
 import Protected from './Protected';
+import Logout from './Logout';
 import Footer from './Footer';
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/login' element={<Login />}/>
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/protected' element={<Protected />}/>
+        <Route path='/logout' element={<Logout />}/>
       </Route>
     </Routes>
     <Footer />

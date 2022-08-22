@@ -17,7 +17,7 @@ function ProtectedNav() {
                             <NavLink className="nav-link" aria-current="page" to="/" activeClassName="active">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/login" activeClassName="active">Log out</NavLink>
+                            <NavLink className="nav-link" to="/logout" activeClassName="active">Log out</NavLink>
                         </li> 
                     </ul>
                 </div>
